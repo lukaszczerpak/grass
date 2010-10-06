@@ -1,5 +1,5 @@
 class GrassGrailsPlugin {
-	def version = "0.2"
+	def version = "0.3"
 	def grailsVersion = "1.1.1 > *"
 	def dependsOn = [:]
 	def pluginExcludes = [
@@ -31,7 +31,7 @@ Compass is a stylesheet authoring tool that uses the Sass stylesheet language to
 		// TODO Implement registering dynamic methods to classes (optional)
 	}
 
-	def watchedResources = "file:./src/stylesheets/*.sass"
+	def watchedResources = [ "file:./src/stylesheets/*.sass", "file:./src/stylesheets/*.scss" ]
 
 	def onChange = { event ->
 		// TODO Implement code that is executed when any artefact that this plugin is

@@ -5,7 +5,7 @@ class CompassGridImg {
 		def images_dir = config.grass?.images_dir
 
 		ant.exec(executable: "compass") {
-			arg(line: "--grid-img ${dimensions} --images-dir ${images_dir} --force")
+			arg(line: "grid-img ${dimensions} ${images_dir}/grid.png --force")
 		}
 		
 	}	

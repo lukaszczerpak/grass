@@ -1,4 +1,4 @@
-<plugin name='grass' version='0.2' grailsVersion='1.1.1 &gt; *'>
+<plugin name='grass' version='0.3' grailsVersion='1.1.1 &gt; *'>
   <author>Alexei Tishin</author>
   <authorEmail>altos.z@gmail.com</authorEmail>
   <title>Compass stylesheet authoring tool plugin</title>
@@ -12,4 +12,5 @@ Compass is a stylesheet authoring tool that uses the Sass stylesheet language to
     <resource>UrlMappings</resource>
   </resources>
   <dependencies />
+  <behavior />
 </plugin>
