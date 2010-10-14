@@ -31,7 +31,7 @@ Compass is a stylesheet authoring tool that uses the Sass stylesheet language to
 		// TODO Implement registering dynamic methods to classes (optional)
 	}
 
-	def watchedResources = [ "file:./src/stylesheets/*.sass", "file:./src/stylesheets/*.scss" ]
+	def watchedResources = [ "file:./src/stylesheets/**/*.sass", "file:./src/stylesheets/**/*.scss" ]
 
 	def onChange = { event ->
 		// TODO Implement code that is executed when any artefact that this plugin is
