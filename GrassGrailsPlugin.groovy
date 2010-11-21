@@ -40,9 +40,14 @@ Compass is a stylesheet authoring tool that uses the Sass stylesheet language to
 
 		GroovyClassLoader classLoader = new GroovyClassLoader(getClass().getClassLoader())
 		ConfigObject config = new ConfigSlurper().parse(classLoader.loadClass('GrassConfig'))
+        def compassConfiguration = new CompassConfiguration()
+        compassConfiguration.init(config) { msg ->
+            event("StatusError", [msg])
+            exit(-1)
+        }
 
 		try {
-			CompassCompile.compile(config, new AntBuilder()) { msg -> 
+			CompassCompile.compile(compassConfiguration, new AntBuilder()) { msg ->
 				throw new Exception(msg)
 			}
 			} catch (Exception e) {
