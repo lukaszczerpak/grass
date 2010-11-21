@@ -1,5 +1,5 @@
 class GrassGrailsPlugin {
-	def version = "0.3.3"
+	def version = "0.3.4"
 	def grailsVersion = "1.1.1 > *"
 	def dependsOn = [:]
 	def pluginExcludes = [
