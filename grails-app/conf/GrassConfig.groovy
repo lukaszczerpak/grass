@@ -11,5 +11,8 @@ grass {
 	
 	// other options: nested, expanded, compact, compressed
 	output_style = "compact"
-	
+
+    // additional compass libs (e.g. fancy-buttons)
+    require = []
+
 }
